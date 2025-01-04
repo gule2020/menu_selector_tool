@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Selector</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" class="logo">
+        <h1>Menu Selector</h1>
+    </header>
+    <main>
+        <section id="menu-selection">
+            <h2>Select Your Menu</h2>
+            <label for="menu-type">Menu Type:</label>
+            <select id="menu-type">
+                <option value="">-- Select --</option>
+                <option value="two-three-course">Two/Three-Course</option>
+                <option value="buffet">Buffet</option>
+            </select>
+            <div id="two-three-course" class="menu-section hidden">
+                <label for="starter">Starter:</label>
+                <select id="starter"></select>
+                <label for="main">Main:</label>
+                <select id="main"></select>
+                <label for="dessert">Dessert:</label>
+                <select id="dessert"></select>
+            </div>
+            <div id="buffet" class="menu-section hidden">
+                <label for="buffet-option">Buffet Option:</label>
+                <select id="buffet-option"></select>
+            </div>
+            <label for="kiddies-option">Kiddies Option:</label>
+            <select id="kiddies-option"></select>
+        </section>
+        <section id="menu-preview">
+            <h2>Menu Preview</h2>
+            <ul id="preview-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Menu Selector Tool</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
